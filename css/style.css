@@ -182,6 +182,7 @@ body{
 .night-mode input{
     color: var(--light);
     background-color: var(--night-secondary);
+    transition: 0.5s;
 }
 
 .night-mode select{
@@ -193,10 +194,12 @@ body{
 
 .night-mode .calculate{
     color: var(--night-secondary);
+    transition: 0.5s;
 }
 
 .night-mode thead th{
     color: var(--night-secondary);
+    transition: 0.5s;
 }
 
 .night-mode .history tbody td{
