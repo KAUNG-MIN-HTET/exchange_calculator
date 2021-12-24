@@ -1,0 +1,37 @@
+
+@media screen and (max-width: 480px){
+    .app{
+        width: 96%;
+        margin: 10px auto;
+    }
+    .output{
+        flex-flow: column;
+        align-items: flex-end;
+    }
+    .logo{
+        width: 100%;
+    }
+
+    .calc{
+        flex-wrap: wrap;
+    }
+    .container{
+        margin-top: 20px;
+    }
+    .input-container{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .input-box{
+        padding: 20px;
+    }
+    .from-container,.to-container{
+        width: 46%;
+    }
+    .calculate-container{
+        width: 100%;
+    }
+    .calculate{
+        padding: 10px 20px;
+    }
+}

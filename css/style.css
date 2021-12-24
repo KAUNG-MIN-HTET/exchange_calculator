@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap');
+
+@font-face {
+    font-family: "mm";
+    font-weight: normal;
+    src: url("../font/MyanmarSagar.ttf");
+}
+
+@font-face {
+    font-family: "mm";
+    font-weight: bold;
+    src: url("../font/Pyidaungsu-2.5.3_Bold.ttf");
+}
+:root{
+    --primary: #2cd1ee;
+    --secondary: #5e5e5e;
+    --light: #ffffff;
+    --night: #222222;
+    --night-secondary: #3a3b3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', "mm";
+    color: var(--secondary);
+}
+
+.app{
+    width: 800px;
+    margin: 100px auto;
+}
+
+.divider{
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 5px;
+}
+
+/* output header */
+.output{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo .brand{
+    font-size: 40px;
+    margin-left: 0.5rem;
+}
+
+.result{
+    font-size: 40px;
+}
+
+/* calc area */
+.calc{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    width: 150px;
+}
+
+.container label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-box,.from,.to{
+    width: 100%;
+    height: 33px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.input-box:focus,.from:focus,.to:focus{
+    outline: none;
+}
+
+.input-box{
+    text-align: right;
+}
+
+.calculate{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    color: var(--light);
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.calculate:active{
+    transform: scale(0.9);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* history */
+.history-container{
+    margin-top: 20px;
+}
+.history{
+    width: 100%;
+}
+
+.history td,.history th{
+    /* width: 25%; */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.history thead th{
+    background-color: var(--primary);
+    color: var(--light);
+}
+
+.history tbody tr{
+    border-radius: 5px;
+    /* background-color: #f1f1f1; */
+}
+
+.history tbody td{
+    background-color: #f1f1f1;
+}
+
+.history tbody td:hover{
+    background-color: #ddd;
+}
+
+.history th:last-child{
+    text-align: right;
+}
+
+.history td:last-child{
+    text-align: right;
+}
+
+.row-spacer{
+    text-align: center !important;
+}
+
+body{
+    transition: 0.5s;
+}
+
+.night-mode{
+    background: var(--night);
+}
+
+.night-mode input{
+    color: var(--light);
+    background-color: var(--night-secondary);
+}
+
+.night-mode select{
+    background-color: var(--night-secondary);
+    transition: 0.5s;
+    color: var;
+    color: var(--light);
+}
+
+.night-mode .calculate{
+    color: var(--night-secondary);
+}
+
+.night-mode thead th{
+    color: var(--night-secondary);
+}
+
+.night-mode .history tbody td{
+    color: var(--light);
+    background-color: var(--night-secondary);
+    transition: 0.5s;
+}
+
+.night-mode .result,.night-mode .logo .brand,.night-mode .container label{
+    color: var(--light);
+    transition: 0.5s;
+}
+
+.night-mode .divider{
+    background-color: var(--secondary);
+    transition: 0.5s;
+}
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--night);
+    border-radius: 50%;
+    border: none;
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn i{
+    font-size: 20px;
+    color: var(--light);
+}
+
+.night-mode .btn{
+    background-color: var(--light);
+    transition: 0.5s;
+}
+
+.night-mode .btn i{
+    color: var(--night);
+    transition: 0.5s;
+}
+
+.clearBtn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--night);
+    border-radius: 50%;
+    border: none;
+
+    position: fixed;
+    bottom: 20px;
+    right: 90px;
+}
+
+.clearBtn i{
+    font: 20px;
+    color: var(--light);
+}
+
+.clearBtn{
+    cursor: pointer;
+}
+
+.night-mode .clearBtn{
+    background-color: var(--light);
+    transition: 0.5s;
+}
+
+.night-mode .clearBtn i{
+    color: var(--night);
+    transition: 0.5s;
+}
